@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/include_toolbar"></include>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_dl_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/activity_main_content"></include>
+
+        <include layout="@layout/activity_main_menu"></include>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
